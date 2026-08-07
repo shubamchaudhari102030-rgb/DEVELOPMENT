@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(50, 41, 41);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,200px) ;
+    gap: 0.4rem;
+    padding: 4rem;
+    border: 2px solid white;
+    
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(65, 150, 57);
+    border: 3px solid white ;
+    /*justify-self: stretch; Height and width nasel mention tr  stretch hote */
+    /*justify self: start then box start mai place ho jayenge*/
+    /*justify self: end then box end mai place ho jayenge*/
+    /*justify self: center then box center mai place ho jayenge*/
+
+    /* align-self: end;  isse vertical axis mai items cell ke andar bottom most aa jayenge */
+
+    place-self: center;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+  <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+ .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    border: 5px solid black;
+
+ }
+
+ .box{
+    width: 350px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 10px;
+    border: 3px solid yellow;
+    position: relative;
+    animation-name: rightMovement; /*Specifies which @keyframes animation to run*/
+     animation-duration: 3s; /*time which animation takes to complete */
+    animation-iteration-count:infinite; /*how many times the animation repeats*/
+    animation-delay: 2s; /* time to wait before starting tanimation-timing-function: linear; he animation*/
+    /* Specifies speed pattern of the animation */
+ 
+    animation-direction:alternate; /*Specifies in which direction animation should play*/
+
+
+
+   animation-timing-function: linear;
+
+      /* OR*/
+
+ 
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /*It controls how the animations speed up and slow down*/
+
+
+    /*to an element before the animation starts and after it ends*/ 
+    /* animation-fill-mode:backwards ;  /*Specifies what styles are aplied */
+} 
+
+
+
+ /* keyframe= how an element should change from one :state
+ to another over time */
+ @keyframes rightMovement  {
+    from{
+        top: 0;
+        left: 0;
+
+    }
+   
+
+    to {
+        top: 0;
+        left: 1200px;
+    }
+    
+ }
+
+
+
+
+  </style>
+
+</head>
+<body>
+    
+
+ <div class="container">
+
+    <div class="box"></div>
+   
+
+ </div>
+
+
+</body>
+</html>

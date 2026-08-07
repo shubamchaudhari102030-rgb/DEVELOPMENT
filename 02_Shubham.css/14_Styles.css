@@ -1,0 +1,39 @@
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 400px ;
+    height: 400px;
+    background-color: beige;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    transition: all 1s linear 1s ;
+
+}
+
+.box:hover{
+    /* transform: rotate(45deg); -ve degrees are also allowed*/
+   /* transform: scale(2);  2 times ho jayega box */
+    /* transform: skew(45deg); iss se box shear hogaa  */
+  
+     transform: translate(500px,300px); /*x & y ke resultant mai jayega */
+
+} 
+
+p{
+    font-size: 30px;
+}
+
+    

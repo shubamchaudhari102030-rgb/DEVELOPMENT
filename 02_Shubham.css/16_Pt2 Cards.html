@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <style>
+
+   *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 201, 248, 1) 65%, rgba(0, 212, 255, 1) 69%, rgba(0, 212, 255, 1) 32%);
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width:400px;
+        height: 600px;
+        background-color: white;
+        border-radius: 20px;
+
+         display: flex;       /*    ye ek ke niche ek aaye isiliye karrahe hai aisa */
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px; /*matlab is card ke andar jo bhi hum dalenge
+                     unke beech gap 25px hoga*/
+
+
+    }
+
+    .card img{
+        width: 100%;  /*Iska matlab width parent (card) ki 100% hogi*/ 
+        height: 30%;/*Iska matlab height parent (card) ki 100% hogi*/ 
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+
+
+    }
+
+.textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 70%;
+    text-align:center ;
+
+
+}
+
+#amountBox{
+    width: 80%;
+    height: 10%;
+    background-color: aquamarine;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#leftBox{
+    /* width: fit-content; */
+    display: flex;
+    align-items: center;
+    gap:15px ;
+    height: 100%;
+
+}
+.imgBox img{
+    height: 50px;
+    width: 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+}
+
+
+#paymentButton{
+    width: 80%;
+    height: 9%;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.cancelBox a{
+    text-decoration: none;
+    color: rgb(12, 6, 6);
+    font-weight: bold ;
+
+}
+
+
+
+ </style>
+
+</head>
+<body>
+    
+
+  <div class="container">
+
+  <div class="card">
+
+    <img src="design.jpeg" alt="">
+
+    <div class="textBox">
+
+        <h2>Order Summary</h2>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolor consequuntur? Rem esse voluptatum minima aperiam, fugiat ipsum magnam earum.</p>
+
+
+    </div>
+
+    <div id="amountBox">
+        <div id="leftBox">
+            <div class="imgBox">
+                <img src="music.png" alt="">
+            </div>
+            <div id="textAmountBox">
+                <p>Amount</p>
+                <p>$99.9/year</p>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="rightbox">
+            <a href="#">Change</a>
+        </div>
+
+    </div>
+
+    <button id="paymentButton"  > Proceed To Payment
+        </button>
+
+        <div class="cancelBox">
+            <a href="#">Cancel Order</a>
+
+        </div>
+
+
+  </div>
+
+  </div>
+
+
+</body>
+</html>

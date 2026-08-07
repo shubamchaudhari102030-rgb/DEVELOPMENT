@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+
+    /* media queries are use to apply different styles
+    for different screen sizes or devices */
+
+    /* min-width= apply css when scree width is greater than, or 
+    equal to the given vlues
+    max-width= apply css when screen width is equal to
+     or smaller than the given values  */
+
+  .box1{
+     background-color: aqua;
+     height: 500px;
+     width: 500px;
+     border: 3px black solid;
+  }
+
+  .box2{
+    background-color: bisque;
+    height: 500px;
+    width: 500px;
+    border: 3px black solid;
+  }
+
+  .box3{
+    background-color:coral;
+     height: 500px;
+     width: 500px;
+     border: 3px black solid;
+  }
+
+  @media (min-width:500px) {
+    .box1{
+        background-color: blueviolet;
+    }
+  }
+
+@media (max-width:300px) {
+    .box2{
+        background-color: blue;
+    }
+    
+}
+
+@media (min-width:300px)  and (max-width:400px) {
+    .box3{
+        background-color: chartreuse;
+    }
+    
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+   <div class="box1">
+    Shubham
+   </div>
+   <div class="box2">
+    chaudhari
+   </div>
+   <div class="box3">
+    cse
+</div>
+
+    
+</body>
+</html>

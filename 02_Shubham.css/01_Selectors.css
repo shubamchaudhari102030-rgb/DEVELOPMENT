@@ -1,0 +1,31 @@
+h2{
+     font-size: medium;
+    text-align: center;
+}
+
+/* types of selectors
+1. element selectors
+2. id selectors
+3. class selector
+4. group selectors
+
+1 element selectors */
+/* element(p, h1,articke, ais ediff tags ko select jarke change karna) */
+  /* may be by the help of intrnal selecor */
+ 
+
+
+/* 2. id selectors
+ humne kisi element ko id assign kar rakhi hai to aap us id ka use karke
+ use style kar sakte hai */
+
+ /* rule # use karke karo  */
+ /* in head tag */
+
+ /* 3. class selector
+ same as id selector 
+ bs id is replace by class and # is replce by .  */
+
+ /* 4. group selectors
+ multiple tags ko simultaneously select kar sakte hai 
+ ex, p,article */

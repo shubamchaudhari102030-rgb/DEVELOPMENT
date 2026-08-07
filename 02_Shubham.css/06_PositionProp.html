@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    div {
+        border: 1px solid black;
+
+    margin: 10px;
+
+    }
+
+
+     /* image vaise muive nhi hota,
+     agar humne position relative lagaya to top,
+     left apply hoga.... */
+
+
+     /* 1. position relative gap maintain karta hai.
+
+     2.position absolute gap maintain nhi karta
+     gap dikhte hi image shift karta hai */
+
+  .container{
+
+   /* Positon relative asla ki left, right, top, bottom 
+   walya properties use karta yetat
+   position statis use kel tar nahi use karta yet */
+
+
+
+    position: relative;
+    height: 5000px;
+    background-color: bisque;
+}
+
+
+
+ .img1{
+     position: relative;
+    top: 100px;
+    left: 100px;
+ } 
+
+ .img2{
+    position: absolute;
+    top: 100px;
+    left: 100px; 
+
+ }
+
+
+ /* hamesha image fixed rahegi fixed ke andar */
+.img3{
+    position: fixed;
+   
+}
+
+/* only parent container ke andar sticky image fixed rahti hai, */
+.img4{
+    position: sticky;
+    top: 100px;
+    left: 100px;
+}
+
+    </style>
+
+
+</head>
+<body>
+
+
+  <div class="container">
+
+    <img src="img1.jpg"
+     alt="Photo1"
+      width="300px"
+       height="300px"
+       class="img1">
+
+    <img src="bgs.jpg"
+     alt="Photo2"
+      width="300px"
+       height="300px"
+       class="img2">
+
+    <img src="img3.jpg"
+     alt="Photo3"
+      width="300px"
+       height="300px"
+       class="img3">
+
+    <img src="img4.jpg"
+     alt="Photo4"
+      width="300px"
+       height="300px"
+       class="img4">
+
+
+
+
+
+  </div>
+
+    
+</body>
+</html>

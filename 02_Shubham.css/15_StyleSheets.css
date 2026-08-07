@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: none;
+    background: #2A7B9B;
+background: #22C1C3;
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+
+
+/* this background color is from css gradient link */
+
+.navContainer{
+    background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    width: 100vw;
+    background-color: rgba(147, 147, 220, 0.47);
+    min-height: 80px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+
+nav{
+    width: 100%;
+    padding-right: 3rem;
+}
+
+#navList{
+    width: 100%;
+    padding:15px ;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#navLogo{
+    font-size: 2.8rem;
+    color: azure;
+
+}
+
+a{
+    text-decoration: none; /* For removig underlin if anchor tag*/
+    color: azure;
+
+}
+
+#navItems{
+    display: flex;
+    gap: 40px;
+}
+
+.footerBox{
+    background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+ width: 100%;
+ text-align: center;
+ min-height: 40px;
+
+
+}
+.footerBox p {
+     color: azure;
+     font-size: 2rem;
+
+
+}
+
+.contentBox{
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5rem ;
+    /* display: flex;
+    flex-direction: column;
+    gap: 100px; */
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.gulabjamun{
+    left: 100px;
+    margin: 30px;
+    margin-bottom: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px brown;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(69, 67, 67, 0.636); */
+
+    
+    transition: all 0.6s 0s;
+    
+}
+
+.gulabjamun:hover{
+    transform:scale(1.1)
+}
+
+
+
+.maggi{
+    left: 100px;
+    margin: 30px;
+    margin-bottom: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px brown;
+
+     transition: all 0.6s 0s;
+    
+}
+
+.maggi:hover{
+    transform:scale(1.1)
+
+}
+
+.ingBox{
+    font-size: 1.2rem;
+}
+
+.recipeBox{
+    font-size: 1.2rem;
+}
+
+
+
+

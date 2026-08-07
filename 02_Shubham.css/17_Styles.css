@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(66, 62, 62) ;
+    display: grid;
+    padding: 4rem;
+    gap: 1rem;
+
+
+
+    /* this is for kitni rows chahiye and kitne colums chahiye */
+    /* fr is for fractional distribution */
+    grid-template-rows: 1fr 1fr 1fr 1fr ;  /* OR grid-template-rows: repeat(2,1fr) */
+    grid-template-columns: 1fr 1fr 1fr; /* OR grid-template-rows: repeat(3,1fr) */
+
+}
+.item{
+    background-color: rgb(96, 96, 195);
+    border: 5px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header , .footer{
+    /* 4 and 1 he ui inspect karun mahit hoil*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.sidebar{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.content1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

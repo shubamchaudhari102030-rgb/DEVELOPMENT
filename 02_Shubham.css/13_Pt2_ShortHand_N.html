@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+
+ .box{
+    background-color: beige;
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+
+
+   /* short hand notation of transition*/
+
+     
+
+     /* property | duratiom | delay | 
+     or
+     property | duration | easin funcn;
+     or
+     property | duration | easing funcn; */
+
+
+     transition: all 2s ease-in 4s ;
+
+    /* or
+    transition: width 2s, height: 5s;; */
+
+    
+ }
+ 
+ /* hover= ui pe box ke upar touch karne par
+ ye andar wala effect apply hoga */
+ .box:hover{
+    width: 1200px;
+    height: 900px;
+    background-color: blue;
+ }
+
+ </style>
+
+</head>
+<body>
+    
+ <div class="box"></div>
+
+</body>
+</html>
