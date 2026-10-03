@@ -1,0 +1,71 @@
+```javascript
+/*
+================================================
+        DOM MANIPULATION
+================================================
+
+DOM = Document Object Model
+
+DOM lets JavaScript work with HTML elements.
+
+4 basic operations:
+
+1. Access  → Find element
+2. Update  → Change element
+3. Insert  → Add new element
+4. Delete  → Remove element
+*/
+
+
+// ================================================
+// 1. ACCESS → Find an HTML element
+// ================================================
+
+let title = document.querySelector("#title");
+
+
+// ================================================
+// 2. UPDATE → Change an existing element
+// ================================================
+
+title.textContent = "Hello Shubham";
+
+
+// ================================================
+// 3. INSERT → Add a new element
+// ================================================
+
+let p = document.createElement("p");
+
+p.textContent = "New Paragraph";
+
+document.body.append(p);
+
+
+// ================================================
+// 4. DELETE → Remove an element
+// ================================================
+
+p.remove();
+
+
+// ================================================
+// QUICK REVISION
+// ================================================
+
+/*
+
+Access  → querySelector()
+Update  → textContent
+Insert  → createElement() + append()
+Delete  → remove()
+
+Easy to remember:
+
+Access  = Find 🔍
+Update  = Change ✏️
+Insert  = Add ➕
+Delete  = Remove ❌
+
+*/
+```
