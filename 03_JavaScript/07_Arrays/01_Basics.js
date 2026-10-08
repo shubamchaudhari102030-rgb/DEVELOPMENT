@@ -45,12 +45,6 @@ brr.splice(1,2,'Kunal'); // It means 1 index se 2 values remove karo and vaha pa
 
 
 
-
-
-
-
-
-
 console.log(typeof(arr));
 console.log(typeof(brr));
 
