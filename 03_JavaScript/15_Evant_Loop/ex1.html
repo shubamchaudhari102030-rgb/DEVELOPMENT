@@ -1,0 +1,36 @@
+```javascript
+// EVENT LOOP IN JAVASCRIPT
+
+// The Event Loop manages asynchronous operations.
+// It checks whether the Call Stack is empty.
+
+// Main Components:
+// 1. Call Stack: Executes JavaScript code.
+// 2. Web APIs: Handle timers and browser events.
+// 3. Microtask Queue: Stores Promise callbacks.
+// 4. Callback Queue: Stores callbacks like setTimeout.
+// 5. Event Loop: Coordinates callback execution.
+
+// Execution Order:
+// 1. Synchronous code
+// 2. Microtasks (Promises)
+// 3. Tasks (setTimeout callbacks)
+
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Timeout");
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log("Promise");
+});
+
+console.log("End");
+
+// OUTPUT:
+// Start
+// End
+// Promise
+// Timeout
+```
